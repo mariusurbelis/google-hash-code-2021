@@ -1,5 +1,9 @@
 package classes;
 
-public class Car {
+import java.util.ArrayList;
 
+public class Car {
+    public ArrayList<String> path = new ArrayList<String>(); 
+
+    public Car() {}
 }
