@@ -8,6 +8,8 @@ public class Street {
     public int L;
     public Queue<Car> cQueue;
     public TrafficLights trafficLight;
+    public int schedule;
+
     
     public Street(int _startsAt, int _endsAt, String _name, int _L){
         startsAt = _startsAt;

@@ -13,13 +13,14 @@ public class GoogleHashCode2021 {
 	static int numberOfStreets = 0;
 	static int numberOfCars = 0;
 	static int ff = 0;
+	static ArrayList<Car> cars = new ArrayList<Car>();
 
 	public static void main(String[] args) {
 
 		Intersection intersections[];
 
 		try {
-			reader = new BufferedReader(new FileReader("input/d.txt"));
+			reader = new BufferedReader(new FileReader("input/a.txt"));
 			input = new ArrayList<String>();
 
 			String line = reader.readLine();
@@ -53,11 +54,26 @@ public class GoogleHashCode2021 {
 				intersections[endingAt].inStreets.add(street);
 			}
 
-			for (int i = 0; i < numberOfIntersections; i++) {
-				if (intersections[i].inStreets.size() > 10) {
-					System.out.println(intersections[i].inStreets.size());
+			for (int i = 0; i < numberOfCars; i++) {
+				line = reader.readLine();
+				splitline = line.split(" ");
+				Car car = new Car();
+				for (int j = 1; j <= Integer.parseInt(splitline[0]); j++) {
+					car.path.add(splitline[j]);
 				}
+				cars.add(car);
 			}
+
+			while (cars.isEmpty()) {
+				
+			}
+
+			for (int i = 0; i < cars.get(5).path.size(); i++) {
+				System.out.println(cars.get(5).path.get(i));
+			}
+
+			
+
 
 		} catch (IOException e) {
 			e.printStackTrace();
