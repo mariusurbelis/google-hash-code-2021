@@ -3,6 +3,11 @@ package classes;
 import java.util.ArrayList;
 
 public class Intersection {
-    private ArrayList<Street> inRoads = new ArrayList<Street>();
-    private ArrayList<Street> outRoads = new ArrayList<Street>();
+    private int id;
+
+    public Intersection(int _id){
+        id = _id;
+    }
+    public ArrayList<Street> inStreets = new ArrayList<Street>();
+    public ArrayList<Street> outStreets = new ArrayList<Street>();
 }
