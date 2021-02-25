@@ -50,8 +50,11 @@ public class GoogleHashCode2021
 				
 				int start = Integer.parseInt(splitline[0]);
 				int end = Integer.parseInt(splitline[1]);
+				String name = splitline[2];
+				int length = Integer.parseInt(splitline[3]);
+
 				
-				Street street = new Street(start, end);
+				Street street = new Street(start, end, name, length);
 				
 				intersections[start].outStreets.add(street);
 				intersections[end].inStreets.add(street);
