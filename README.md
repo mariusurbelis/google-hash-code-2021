@@ -1,2 +1,10 @@
-# google-hash-code-2021
-Google Hash Code 2021 solutions by team "Just League it Out!"
+# Google Hash Code Competition 2021
+Programming remotely as a part of the Dundee University hub in Dundee, UK
+
+---
+
+## Team:
+- Alif Allgaier
+- Dumitru Vulpe
+- Marius Urbelis
+- Yaseen Lahmami
